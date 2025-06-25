@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bvm638aywnojm"]
+[gd_scene load_steps=10 format=3 uid="uid://bvm638aywnojm"]
 
 [ext_resource type="PackedScene" uid="uid://bm36061sbarw" path="res://scenes/player.tscn" id="1_7jrgq"]
 [ext_resource type="Texture2D" uid="uid://cak0e0v5h7qie" path="res://resources/sprites/world_tileset.png" id="2_dw6ru"]
 [ext_resource type="PackedScene" uid="uid://yipdl3enmupl" path="res://scenes/plattform.tscn" id="2_o2il5"]
+[ext_resource type="PackedScene" uid="uid://csmb2tj4mgb4a" path="res://scenes/coin.tscn" id="4_nnx6g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o2il5"]
 texture = ExtResource("2_dw6ru")
@@ -237,3 +238,21 @@ position = Vector2(-24, 32)
 position = Vector2(0, -4)
 zoom = Vector2(4, 4)
 position_smoothing_enabled = true
+
+[node name="coin" parent="." instance=ExtResource("4_nnx6g")]
+position = Vector2(13, 56)
+
+[node name="coin2" parent="." instance=ExtResource("4_nnx6g")]
+position = Vector2(168, 56)
+
+[node name="coin3" parent="." instance=ExtResource("4_nnx6g")]
+position = Vector2(168, -40)
+
+[node name="coin4" parent="." instance=ExtResource("4_nnx6g")]
+position = Vector2(264, 22)
+
+[node name="coin5" parent="." instance=ExtResource("4_nnx6g")]
+position = Vector2(395, -25)
+
+[node name="coin6" parent="." instance=ExtResource("4_nnx6g")]
+position = Vector2(52, -91)
